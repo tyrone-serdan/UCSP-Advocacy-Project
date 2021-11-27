@@ -1,4 +1,55 @@
+h1, h2, h3, h4, h5, button {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+    
+}
+
+
 body {
-    background-color: black;
-    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: white;
+    color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.lg-padding {
+    padding-bottom: 8%;
+}
+
+.md-padding {
+    padding-bottom: 5%;
+}
+
+.sm-padding {
+    padding-bottom: 3%;
+}
+
+#site-navbar {
+    padding-bottom: 10%;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar {
+    padding-top: 2%;
+    /* padding-left: 8%;
+    padding-right: 8%; */
+    padding-bottom: 2%;
+}
+
+.main-btn {
+    margin-right: 3%;
+    margin-bottom: 4%;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.3rem;
 }
