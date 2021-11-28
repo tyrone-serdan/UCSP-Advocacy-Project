@@ -1,11 +1,15 @@
-h1, h2, h3, h4, h5, button {
+h1, h2, h3, h4, h5, h6,button {
     font-weight: 600;
 }
 
 p {
     font-weight: 400;
-    
 }
+
+/* img {
+    ONLY REMOVE THIS WHEN STUFF IS WEIRD
+    width: 100%;
+} */
 
 
 body {
@@ -16,24 +20,51 @@ body {
     padding-right: 5%;
 }
 
-.lg-padding {
+/* HELPER CLASSES */
+
+.lg-padding-bot {
     padding-bottom: 8%;
 }
 
-.md-padding {
+.md-padding-bot {
     padding-bottom: 5%;
 }
 
-.sm-padding {
+.sm-padding-bot {
     padding-bottom: 3%;
 }
 
-#site-navbar {
-    padding-bottom: 10%;
+.lg-padding-top {
+    padding-top: 8%;
 }
+
+.md-padding-top {
+    padding-top: 5%;
+}
+
+.sm-padding-top {
+    padding-top: 3%;
+}
+
+/* .center-obj {
+    margin: auto;
+    text-align:center; 
+} */
+
+
+
+
+
+
+/* SPECIFIC CHANGES TO CLASSES */
 
 .navbar-brand {
     font-weight: 700;
+    font-size: 3rem;
+}
+
+.nav-link {
+    text-align: center;
 }
 
 .navbar {
@@ -48,8 +79,44 @@ body {
     margin-bottom: 4%;
 }
 
+.main-text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .main-img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    display: block;
+    margin: auto;
     border-radius: 1.3rem;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.project-mid-card {
+    margin-left: auto;
+}
+
+.project-arrow {
+    font-size: 3rem;
+}
+
+/* THIS COULD BE A TEMPORARY CHANGE */
+
+@media (max-width: 990px) {
+
+    .main-text {
+        text-align: center;
+        text-justify: distribute-all-lines;
+    }
+
+    .main-img {
+        width: 70%;
+    }
+
+    .main-name-design {
+        display: none;
+    }
 }
