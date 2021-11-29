@@ -173,6 +173,27 @@ body {
     border: 0;
 }
 
+.carousel-caption {
+    transition: all 0.1s;
+    color: #0d6efd;
+}
+
+.carousel-img {
+    filter: blur(3px);
+    transition: all 0.2s;
+}
+
+.carousel-img:hover {
+    filter: blur(10px) grayscale();
+}
+
+.carousel-img:hover + .carousel-caption {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1.3px rgba(255, 255, 255, 0.2);
+    color: white;
+
+}
+
 /* THIS COULD BE A TEMPORARY CHANGE */
 
 @media (max-width: 990px) {
