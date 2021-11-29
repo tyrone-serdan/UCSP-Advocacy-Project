@@ -8,11 +8,13 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 
-        <!-- Favicon THIS IS TEMPORARY, CHANGE THIS. -->
-        <link rel="shortcut icon" href="/res/img/favicon.png" type="image/x-icon">
+        <!-- Personal CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- FAVICON STUFF -->
+        <link rel="shortcut icon" href="res/img/favicon/favicon.ico" type="image/x-icon">
 
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +37,7 @@
                                     <a class="nav-link" aria-current="page" href="#">About us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Our Projects</a>
+                                    <a class="nav-link" href="#">Our Values</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Contact us</a>
@@ -49,16 +51,21 @@
             <section id="site-main" class="lg-padding-bot">
                 <main>
                     <div class="main-text order-lg-first order-md-last order-sm-last">
-                        <h5 class="sm-padding-bot lg-padding-top">Tyrone Serdan</h5>
+                        <h5 class=" lg-padding-top main-author">Tyrone Serdan</h5>
+                        <h5 class="sm-padding-bot main-author">11 - Saint Basil</h5>
                         <h1 class="sm-padding-bot main-title">N<i class="bi bi-pencil-square"></i>TIFY</a></h1>
-                        <p class="sm-padding-bot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae, suscipit dolorem officia laborum harum! Suscipit dignissimos molestias veritatis natus quos necessitatibus cupiditate, accusantium id vel blanditiis animi ut nobis.</p>
-                        <div class="lg-padding-bot">
+                        <p class="sm-padding-bot main-text-body">Notify aids all Filipinos who are unable to recieve information due to the attacks on journalists and media outlets. We 
+                            protect and aid the journalists who aim to inform the public, no matter the cost.</p>
+                        <div class="sm-padding-bot">
                             <button type="button" class="btn btn-dark btn-lg main-btn"><i class="bi bi-book-fill"></i> Learn more</button>
                             <button type="button" class="btn btn-outline-light btn-lg main-btn"><i class="bi bi-person"></i> About us</button>
                         </div>
+                        <div class="main-quote-container lg-padding-top lg-padding-bot">
+                            <span class="main-quote"></span>
+                        </div>
                     </div>
 
-                    <h1 class="text-center">THIS IS A VERY INSPIRING QUOTE.</h1>
+
                 </main>
             </section>
         </div>
@@ -67,12 +74,12 @@
         <div class="padding-body">
             <section id="site-projects" class="lg-padding-bot">
 
-                <h1 class="text-center lg-padding-bot lg-padding-top">Our Projects</h1>
+                <h1 class="text-center lg-padding-bot lg-padding-top">Our Values</h1>
 
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
-                            <img src="/res/placeholder-img/ph-vertical.jpg" alt="vertical img" class="project-img">
+                            <img src="/res/img/our-values.png" alt="vertical img" class="project-img">
                         </div>
 
                         <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-between project-cards">
@@ -82,7 +89,6 @@
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         <a href="#" class="card-link">Card link</a>
-                                        <a href="#" class="card-link">Another link</a>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +100,6 @@
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
                                 </div>
                             </div>
 
@@ -106,7 +111,6 @@
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         <a href="#" class="card-link">Card link</a>
-                                        <a href="#" class="card-link">Another link</a>
                                     </div>
                                 </div>
                             </div>
@@ -115,19 +119,47 @@
                 </div>
             </section>
 
-            <section id="site-contact-us">
-                <h1 class="text-center lg-padding-bot">Reach out to us on our social media platforms!</h1>
-                <div>
-                    <a href="#">
-                        $
-                    </a>
-                    <a href="#">
-                        $
-                    </a>
-                    <a href="#">
-                        $
-                    </a>
-                </div>
+            <section id="site-collaboration">
+                <h1 class="text-center lg-padding-bot">In Collaboration With</h1>
+
+                <div id="carouselExampleCaptions" class="carousel slide lg-padding-bot" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/res/placeholder-img/ph-landscape.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/res/placeholder-img/ph-landscape.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/res/placeholder-img/ph-landscape.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section>
 
             <section id="site-footer">
@@ -141,7 +173,7 @@
         </div>
         
 
-        <!-- <script src="index.js"></script> -->
+        <script src="index.js"></script>
         <!-- ^^^^^^^^^^^^^^^^^ REMEMBER TO ADD TAG WHEN SUBMITTING -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
