@@ -110,6 +110,6 @@ function Delete() {
 
 valInterval = setInterval(Type, 100);
 
-// setTimeout(() => {
-//     warnUser();
-// }, 1000);
+setTimeout(() => {
+    warnUser();
+}, 1000);
