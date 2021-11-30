@@ -20,7 +20,7 @@ const CARD_TEXT = [
         long: " We also aim to promote media transparency towards both all types of media outlets to ensure a healthy relationship between the nation and the journalists."
     },
     {
-        short: "You can help us through spreading the word of our advocacy, the more people that know about the advocacy, the better!",
+        short: "You can help us through spreading the word of our advocacy, the more people that know about the advocacy, the better.",
         long: " Spreading our advocacy allows our vision to succeed. Not only that, we may receive more aid by the large amount of people that sees what we aim to do to with journalism in The Philippines."
     },
 ]
@@ -41,7 +41,7 @@ let valInterval;
 function changeCardText(link, card, num) {
     if (link.innerHTML == "Read Less") {
         link.innerHTML = "Read More";
-        card.innerHTML = CARD_TEXT[num]["short"];
+        card.innerHTML = CARD_TEXT[num]["short"] + "..";
     } else {
         card.innerHTML = CARD_TEXT[num]["short"] + CARD_TEXT[num]["long"];
         link.innerHTML = "Read Less"
@@ -72,6 +72,17 @@ function cardClick(card) {
     
         default:
             console.log(`for some reason you got ${NUM} in the arg.`);
+    }
+}
+
+function warnUser() {
+    const reqResponse = "This is a UCSP Project";
+    let response = prompt("The website seen is made solely for a UCSP project, if you have read this, please type: " + reqResponse);
+
+    if (response.toLowerCase() != reqResponse.toLowerCase()) {
+        warnUser();
+    } else {
+        return;
     }
 }
 
@@ -114,3 +125,7 @@ function Delete() {
 
 
 valInterval = setInterval(Type, 100);
+
+setTimeout(() => {
+    warnUser();
+}, 1000);
