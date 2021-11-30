@@ -204,21 +204,21 @@ body {
 }
 
 .carousel-img:hover + .carousel-caption {
-    background-color: rgba(95, 95, 95, 0.3);
-    border: 1.3px rgba(95, 95, 95, 0.3);
+    background-color: rgba(95, 95, 95, 0.5);
+    border: 1.3px rgba(95, 95, 95, 0.5);
     color: white;
     transition: all 0.2s;
 }
 
 .carousel-caption:hover {
-    background-color: rgba(95, 95, 95, 0.3);
-    border: 1.3px rgba(95, 95, 95, 0.3);
+    background-color: rgba(95, 95, 95, 0.5);
+    border: 1.3px rgba(95, 95, 95, 0.5);
     color: white;
     transition: all 0.2s;
 }
 
 .carousel-caption:hover + .carousel-img {
-    filter: blur(10px) grayscale();
+    filter: blur(10px);
 }
 
 .footer-icon {

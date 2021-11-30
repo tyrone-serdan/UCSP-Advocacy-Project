@@ -1,6 +1,3 @@
-// LOREM IPSUM TEXT USED FOR DEBUG PURPOSES
-const lorem = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae, suscipit dolorem officia laborum harum! Suscipit dignissimos molestias veritatis natus quos necessitatibus cupiditate, accusantium id vel blanditiis animi ut nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae, suscipit dolorem officia laborum harum! Suscipit dignissimos molestias veritatis natus quos necessitatibus cupiditate, accusantium id vel blanditiis animi ut nobis.";
-
 const QUOTE_TEXT = document.getElementsByClassName("main-quote").item(0);
 const JOURN_QUOTES = [
     "Our liberty depends on the freedom of the press, and that cannot be limited without being lost.",
@@ -57,27 +54,14 @@ function cardClick(card) {
     const CARD = document.querySelector(`#card-${card} .card-text`);
     const LINK = document.querySelector(`#card-${card} a`);
 
-    switch (card) {
-        case "1":
-            changeCardText(LINK, CARD, NUM);
-            break;
-
-        case "2":
-            changeCardText(LINK, CARD, NUM);
-            break;
-
-        case "3":
-            changeCardText(LINK, CARD, NUM);
-            break;
-    
-        default:
-            console.log(`for some reason you got ${NUM} in the arg.`);
-    }
+    changeCardText(LINK, CARD, NUM);
 }
 
 function warnUser() {
     const reqResponse = "This is a UCSP Project";
     let response = prompt("The website seen is made solely for a UCSP project, if you have read this, please type: " + reqResponse);
+
+    if (response === null) warnUser();
 
     if (response.toLowerCase() != reqResponse.toLowerCase()) {
         warnUser();
@@ -126,6 +110,6 @@ function Delete() {
 
 valInterval = setInterval(Type, 100);
 
-setTimeout(() => {
-    warnUser();
-}, 1000);
+// setTimeout(() => {
+//     warnUser();
+// }, 1000);
